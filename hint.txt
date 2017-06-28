@@ -1,3 +1,6 @@
 RUNSERVER >>>>>
-python3 manage.py runserver
+python manage.py runserver
+
+CREATE TABLE FOR MODEL >>>>>
+python manage.py makemigrations landing
 

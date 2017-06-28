@@ -17,7 +17,9 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from landing import views
 
+admin.autodiscover()
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('landing.urls')),
+    url(r'^', include('landing.urls'), name='landing'),
 ]
